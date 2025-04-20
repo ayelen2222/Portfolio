@@ -27,6 +27,21 @@ body {
 
 /* "Space Grotesk" */
 @layer utilities {
+   @keyframes gradient-xy {
+
+     0%,
+     100% {
+       background-position: 0% 50%;
+     }
+
+     50% {
+       background-position: 100% 50%;
+     }
+   }
+
+   .animate-gradient-xy {
+     animation: gradient-xy 4s ease infinite;
+   }
   @keyframes blink {
 
     0%,
@@ -56,21 +71,7 @@ body {
   .animate-loading-bar {
     animation: loading 0.8s ease infinite;
   }
-   @keyframes gradient-xy {
-
-     0%,
-     100% {
-       background-position: 0% 50%;
-     }
-
-     50% {
-       background-position: 100% 50%;
-     }
-   }
-
-   .animate-gradient-xy {
-     animation: gradient-xy 4s ease infinite;
-   }
+  
 }
 
 .reveal {
